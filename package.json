@@ -1,0 +1,19 @@
+{
+  "name": "devnahuelobot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devNahuelOper/devNahuelObot.git"
+  },
+  "author": "Nahuel Gorosito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devNahuelOper/devNahuelObot/issues"
+  },
+  "homepage": "https://github.com/devNahuelOper/devNahuelObot#readme"
+}
