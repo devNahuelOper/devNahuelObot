@@ -14,12 +14,12 @@ module.exports = function(controller) {
                 text: 'Here are some quick replies',
                 quick_replies: [
                     {
-                        title: 'Foo',
-                        payload: 'foo',
+                        title: 'Name',
+                        payload: 'Nahuel Gorosito',
                     },
                     {
-                        title: 'Bar',
-                        payload: 'bar',
+                        title: 'Title',
+                        payload: 'Fullstack Developer',
                     }
                 ]
             });
