@@ -20,6 +20,10 @@ module.exports = function(controller) {
                     {
                         title: 'Title',
                         payload: 'Fullstack Developer',
+                    },
+                    {
+                        title: 'Where did you grow up?',
+                        payload: 'Queens, New York',
                     }
                 ]
             });
