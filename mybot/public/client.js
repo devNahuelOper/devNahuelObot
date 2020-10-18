@@ -184,10 +184,10 @@ var Botkit = {
         if (this.options.enable_history) {
             that.getHistory();
         }
-
         // Connection opened
         that.socket.addEventListener('open', function (event) {
             console.log('CONNECTED TO SOCKET');
+            
             that.reconnect_count = 0;
             that.trigger('connected', event);
             that.deliverMessage({
@@ -196,6 +196,9 @@ var Botkit = {
                 channel: 'socket',
                 user_profile: that.current_user ? that.current_user : null,
             });
+            that.renderMessage(connectEvent);
+            let message = document.getElementsByClassName('message')[1];
+            message.innerHTML = "Welcome to devNahuelObot!";
         });
 
         that.socket.addEventListener('error', function (event) {
@@ -430,12 +433,12 @@ var Botkit = {
                 that.replies.appendChild(list);
 
                 // uncomment this code if you want your quick replies to scroll horizontally instead of stacking
-                // var width = 0;
-                // // resize this element so it will scroll horizontally
-                // for (var e = 0; e < elements.length; e++) {
-                //     width = width + elements[e].offsetWidth + 18;
-                // }
-                // list.style.width = width + 'px';
+                var width = 0;
+                // resize this element so it will scroll horizontally
+                for (var e = 0; e < elements.length; e++) {
+                    width = width + elements[e].offsetWidth + 18;
+                }
+                list.style.width = width + 'px';
 
                 if (message.disable_input) {
                     that.input.disabled = true;
