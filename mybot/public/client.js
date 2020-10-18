@@ -82,7 +82,7 @@ var Botkit = {
             user: this.guid,
             channel: this.options.use_sockets ? 'websocket' : 'webhook'
         });
-
+        // Text in input field after sending message
         this.input.value = '';
 
         this.trigger('sent', message);
