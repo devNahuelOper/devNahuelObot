@@ -194,8 +194,10 @@ a.button:hover {
   width: 50px;
   background: none;
   border: 0;
+  outline: 0;
   cursor: pointer;
-  color: blue;
+  /* color: blue; */
+  color: #5c9497;
   font-weight: bold;
 }
 #message_window form {
@@ -249,7 +251,8 @@ a.button:hover {
 }
 #message_window .message.outgoing {
   float: right;
-  background: #a795ef;
+  /* background: #a795ef; */
+  background: #05a7af;
   color: white;
 }
 #message_window #message_replies {
@@ -272,16 +275,18 @@ a.button:hover {
 #message_window #message_replies a {
   text-decoration: none;
   display: block;
-  border: 1px solid #a795ef;
-  color: #a795ef;
+  border: 1px solid #05a7af;
+  /* color: #a795ef; */
+  color: #05a7af;
   border-radius: 16px;
   padding: 0.25rem 1rem;
   font-size: 14px;
   cursor: pointer;
 }
 #message_window #message_replies a:hover {
-  background: #a795ef;
+  background: #05a7af;
   color: #FFF;
+  transition: 1s;
 }
 
 /* typing indicator CSS based on code by Joseph Fusco -> https://codepen.io/fusco/pen/XbpaYv */
