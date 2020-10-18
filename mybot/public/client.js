@@ -24,10 +24,12 @@ var Botkit = {
         });
     },
     trigger: function (event, details) {
+        // console.log("1: " + JSON.stringify(event));
         var event = new CustomEvent(event, {
             detail: details
         });
         this.message_window.dispatchEvent(event);
+        // console.log("2: " + JSON.stringify(event));
     },
     request: function (url, body) {
         var that = this;
@@ -82,10 +84,16 @@ var Botkit = {
             user: this.guid,
             channel: this.options.use_sockets ? 'websocket' : 'webhook'
         });
+
         // Text in input field after sending message
         this.input.value = '';
 
         this.trigger('sent', message);
+        // this.message_window.dispatchEvent(
+        //   new CustomEvent('sent', {
+        //   detail: message
+        //   })
+        // )
 
         return false;
     },
