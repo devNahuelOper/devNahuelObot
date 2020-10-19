@@ -67,7 +67,7 @@ $human_message_text: white;
       flex-direction: column-reverse;
       display: flex;
       overflow-y: auto;
-
+      background: black;
      div div {
         margin: 0.25rem;
         clear: both;
@@ -167,7 +167,7 @@ $human_message_text: white;
       overflow-x: auto;
       flex-shrink: 0;
       -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
-
+      background: black;
       ul {
           list-style-type: none;
           margin: 0px auto;
