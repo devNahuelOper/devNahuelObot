@@ -256,6 +256,7 @@ a.button:hover {
   padding: 4px;
   box-shadow: -3px 1px 1px 0px black;
   text-shadow: -1px 1px 2px black;
+  border: 1px solid #3e3d3d;
 }
 
 #message_window .file_attachment img {
