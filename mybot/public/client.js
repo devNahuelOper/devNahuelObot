@@ -181,9 +181,15 @@ var Botkit = {
         that.socket = new WebSocket(ws_url);
 
         var connectEvent = 'hello';
+        // var connectEvent = {
+        //   text: "Welcome to devNahuelObot!",
+        // };
         if (Botkit.getCookie('botkit_guid')) {
             that.guid = Botkit.getCookie('botkit_guid');
             connectEvent = 'welcome_back';
+            // connectEvent = {
+            //   text: "Welcome to devNahuelObot!",
+            // };
         } else {
             that.guid = that.generate_guid();
             Botkit.setCookie('botkit_guid', that.guid, 1);
@@ -204,9 +210,20 @@ var Botkit = {
                 channel: 'socket',
                 user_profile: that.current_user ? that.current_user : null,
             });
-            that.renderMessage(connectEvent);
-            let message = document.getElementsByClassName('message')[1];
-            message.innerHTML = "Welcome to devNahuelObot!";
+            let welcomeMessage = {
+              text: "",
+              isTyping: true
+            }
+            setTimeout(() => {
+              welcomeMessage = {
+                text: "Welcome to devNahuelObot!",
+                isTyping: false
+              };
+              that.renderMessage(welcomeMessage);
+            }, 1000);
+            that.renderMessage(welcomeMessage);
+            // let message = document.getElementsByClassName('message')[1];
+            // message.innerHTML = "Welcome to devNahuelObot!";
         });
 
         that.socket.addEventListener('error', function (event) {
