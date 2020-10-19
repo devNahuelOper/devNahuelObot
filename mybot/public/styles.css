@@ -193,7 +193,7 @@ a.button:hover {
   flex-direction: column-reverse;
   display: flex;
   overflow-y: auto;
-  background: black;
+  background: linear-gradient(90deg, #060121, #4e004e);
 }
 
 #message_window section div div {
