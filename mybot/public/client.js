@@ -224,8 +224,14 @@ var Botkit = {
         };
 
         that.renderMessage(welcomeMessage);
-         let message = document.getElementsByClassName("message")[1];
-         message.classList.add("blur-in");
+        let message = document.getElementsByClassName("message")[1];
+        message.classList.add("blur-in");
+
+        let hint = {
+          text: "",
+          isTyping: true,
+        };
+        
       }, 800);
       that.renderMessage(welcomeMessage);
       // let message = document.getElementsByClassName("message")[1];
