@@ -194,6 +194,7 @@ a.button:hover {
   display: flex;
   overflow-y: auto;
   background: linear-gradient(90deg, #060121, #4e004e);
+  /* background: linear-gradient(320deg, #060121, #4e004e, #4c3201); */
 }
 
 #message_window section div div {
@@ -247,11 +248,12 @@ a.button:hover {
 }
 
 #message_window .file_attachment {
-  background: #F0F0F0;
+  background: #333;
   color: #333;
   border-radius: 5px;
   display: inline-block;
   max-width: 75%;
+  padding: 4px;
 }
 
 #message_window .file_attachment img {

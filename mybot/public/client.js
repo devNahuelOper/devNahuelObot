@@ -361,6 +361,23 @@ var Botkit = {
         var source = document.getElementById('message_template').innerHTML;
         that.message_template = Handlebars.compile(source);
 
+        const context = {
+          message: {
+            isTyping: true,
+            open_link: "https://denizen-confidant.herokuapp.com/",
+            files: [
+              {
+                filename: 'Fullstack Resume',
+                url:
+                  "https://docs.google.com/document/d/18PzEEQWj6XgZHzPPRRmsj2NMegGs_qG8r6lh0e4V91o/edit",
+              },
+            ],
+          },
+        };
+
+        const compiledHtml = that.message_template(context);
+        that.message_list.innerHTML = compiledHtml;
+
         that.replies = document.getElementById('message_replies');
 
         that.input = document.getElementById('messenger_input');
