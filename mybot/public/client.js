@@ -217,23 +217,34 @@ var Botkit = {
         text: "",
         isTyping: true,
       };
+      let hint = {
+        text: "",
+        isTyping: true,
+      };
+
       setTimeout(() => {
         welcomeMessage = {
           text: "Welcome to devNahuelObot!",
           isTyping: false,
         };
-
         that.renderMessage(welcomeMessage);
         let message = document.getElementsByClassName("message")[1];
         message.classList.add("blur-in");
 
-        let hint = {
-          text: "",
-          isTyping: true,
-        };
         
       }, 800);
       that.renderMessage(welcomeMessage);
+      that.renderMessage(hint);
+
+      setTimeout(() => {
+        hint = {
+          text: "Type in 'quick' for some quick answers about me...",
+          // isTyping: false,
+        };
+        that.renderMessage(hint);
+        hint.isTyping = false;
+      }, 3000);
+      
       // let message = document.getElementsByClassName("message")[1];
       // message.classList.add("blur-in");
     });
