@@ -75,7 +75,7 @@ var Botkit = {
             text: text
         };
 
-        this.clearReplies();
+        // this.clearReplies();
         that.renderMessage(message);
 
         that.deliverMessage({
@@ -361,22 +361,22 @@ var Botkit = {
         var source = document.getElementById('message_template').innerHTML;
         that.message_template = Handlebars.compile(source);
 
-        const context = {
-          message: {
-            isTyping: false,
-            open_link: "https://denizen-confidant.herokuapp.com/",
-            files: [
-              {
-                filename: 'Fullstack Resume',
-                url:
-                  "https://docs.google.com/document/d/18PzEEQWj6XgZHzPPRRmsj2NMegGs_qG8r6lh0e4V91o/edit",
-              },
-            ],
-          },
-        };
+        // const context = {
+        //   message: {
+        //     isTyping: false,
+        //     open_link: "https://denizen-confidant.herokuapp.com/",
+        //     files: [
+        //       {
+        //         filename: 'Fullstack Resume',
+        //         url:
+        //           "https://docs.google.com/document/d/18PzEEQWj6XgZHzPPRRmsj2NMegGs_qG8r6lh0e4V91o/edit",
+        //       },
+        //     ],
+        //   },
+        // };
 
-        const compiledHtml = that.message_template(context);
-        that.message_list.innerHTML = compiledHtml;
+        // const compiledHtml = that.message_template(context);
+        // that.message_list.innerHTML = compiledHtml;
 
         that.replies = document.getElementById('message_replies');
 
@@ -430,7 +430,7 @@ var Botkit = {
 
 
         that.on('message', function (message) {
-            that.clearReplies();
+            // that.clearReplies();
             if (message.quick_replies) {
 
                 var list = document.createElement('ul');
@@ -446,6 +446,7 @@ var Botkit = {
 
                         el.onclick = function () {
                             that.quickReply(reply.payload);
+                            el.remove();
                         }
 
                         li.appendChild(el);
