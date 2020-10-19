@@ -59,7 +59,9 @@ footer {
 }
 
 a {
-  color: #a795ef;
+  /* color: #a795ef; */
+  color: #05a7af;
+  text-decoration: none;
 }
 
 .copyurl {
@@ -257,6 +259,11 @@ a.button:hover {
   box-shadow: -3px 1px 1px 0px black;
   text-shadow: -1px 1px 2px black;
   border: 1px solid #3e3d3d;
+  transition: 1s;
+}
+
+#message_window .file_attachment:hover {
+  filter: brightness(1.5);
 }
 
 #message_window .file_attachment img {
@@ -296,7 +303,9 @@ a.button:hover {
 }
 
 #message_window #message_replies {
-  background: black;
+  /* background: black; */
+  /* background: linear-gradient(320deg, #060121, #4e004e, #4c3201); */
+  background: linear-gradient(90deg, #060121, #4e004e);
   text-align: center;
   overflow-x: auto;
   flex-shrink: 0;
