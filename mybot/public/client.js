@@ -363,7 +363,7 @@ var Botkit = {
 
         const context = {
           message: {
-            isTyping: true,
+            isTyping: false,
             open_link: "https://denizen-confidant.herokuapp.com/",
             files: [
               {
