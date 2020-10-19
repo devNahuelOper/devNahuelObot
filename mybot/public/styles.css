@@ -247,6 +247,12 @@ a.button:hover {
   display: inline-block;
   max-width: 75%;
   box-shadow: 1px 1px 0px 2px #afafaf;
+  
+  /* animation: 1s blink infinite 0.6666s; */
+}
+
+#message_window .blur-in {
+  animation: 1.5s blur-in 1 0s;
 }
 
 #message_window .file_attachment {
@@ -379,6 +385,22 @@ a.button:hover {
 @keyframes blink {
   50% {
     opacity: 1;
+  }
+}
+
+@keyframes blur-in {
+  0% {
+    text-shadow: -2px 0px 0px black;
+    /* transform: scale(0.75); */
+    transform: scaleX(0.2) translateX(-100px);
+  }
+  50% {
+    text-shadow: 2px 0px 0px black;
+    /* transform: scale(0.75); */
+  }
+  100% {
+    text-shadow: 0px 0px 0px black;
+    transform: scale(1);
   }
 }
 
