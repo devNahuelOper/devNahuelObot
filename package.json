@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/devNahuelOper/devNahuelObot/issues"
   },
-  "homepage": "https://github.com/devNahuelOper/devNahuelObot#readme",
+  "homepage": " https://devnahueloper.github.io/devNahuelObot/",
   "dependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
