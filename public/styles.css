@@ -25,6 +25,8 @@ body {
   background-repeat: repeat-y;
   background-position: 520px top;
   background-size: contain;
+  border-top: 10px solid #8b8b8b;
+  border-bottom: 10px solid #8b8b8b;
 }
 
 .wrapper {
@@ -152,8 +154,8 @@ a.button:hover {
 /* chat client */
 #message_window {
   background: #ffffff;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+  /* border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc; */
   /*height: 500px;
   width: 320px;*/
   height: 100%;
@@ -191,9 +193,9 @@ a.button:hover {
 #message_window .powered_by {
   flex-shrink: 0;
   text-align: center;
-  border-bottom: 1px solid #ccc;
+  /* border-bottom: 1px solid #ccc; */
   font-size: 14px;
-  padding: 0.25rem;
+  /* padding: 0.25rem; */
   color: #666;
 }
 
