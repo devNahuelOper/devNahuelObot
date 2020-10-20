@@ -10,6 +10,10 @@ html {
   font-size: 18px;
   background-color: #fff;
   font-family: "helvetica", sans-serif;
+  background-image: url('greenbot.jpg');
+  background-repeat: repeat-y;
+  background-position: -130px top;
+  background-size: contain;
 }
 
 .wrapper {
