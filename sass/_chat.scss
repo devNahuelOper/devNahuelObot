@@ -7,9 +7,7 @@ $human_message_text: white;
 
 #message_window {
   background: $background;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-
+  border-radius: 8px;
   /*height: 500px;
     width: 320px;*/
   height: 100%;
@@ -45,9 +43,9 @@ $human_message_text: white;
     flex-shrink: 0;
     text-align: center;
 
-    border-bottom: 1px solid #ccc;
+    // border-bottom: 1px solid #ccc;
     font-size: 14px;
-    padding: 0.25rem;
+    // padding: 0.25rem;
     color: #666;
 
     a {
@@ -87,9 +85,13 @@ $human_message_text: white;
       background: none;
       border: 0;
       cursor: pointer;
-      color: blue;
+      color: #5c9497;
       font-weight: bold;
     }
+  }
+
+  .blur-in {
+    animation: 1.5s blur-in 1 0s;
   }
 
   form {
@@ -120,6 +122,15 @@ $human_message_text: white;
     border-radius: 5px;
     display: inline-block;
     max-width: 75%;
+    padding: 4px;
+    box-shadow: -3px 1px 1px 0px black;
+    text-shadow: -1px 1px 2px black;
+    border: 1px solid #3e3d3d;
+    transition: 1s;
+
+    &:hover {
+      filter: brightness(1.5);
+    }
 
     img {
       max-width: 100%;
@@ -139,6 +150,8 @@ $human_message_text: white;
     text-align: center;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
     display: block;
+    background: #333333;
+    text-shadow: -1px 1px 2px black;
   }
 
   .message p {
@@ -164,7 +177,7 @@ $human_message_text: white;
     overflow-x: auto;
     flex-shrink: 0;
     -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
-    background: black;
+    background: linear-gradient(90deg, #060121, #4e004e);
     ul {
       list-style-type: none;
       margin: 0px auto;
@@ -179,16 +192,19 @@ $human_message_text: white;
     a {
       text-decoration: none;
       display: block;
-      border: 1px solid $botkit_purple;
-      color: $botkit_purple;
+      // border: 1px solid $botkit_purple;
+      // color: $botkit_purple;
       border-radius: 16px;
       padding: 0.25rem 1rem;
       font-size: 14px;
       cursor: pointer;
-
+      border: 1px solid #05a7af;
+      color: #05a7af;
       &:hover {
-        background: $botkit_purple;
+        // background: $botkit_purple;
+        background: #05a7af;
         color: #fff;
+        transition: 1s;
       }
     }
   }
@@ -219,5 +235,21 @@ $human_message_text: white;
 @keyframes blink {
   50% {
     opacity: 1;
+  }
+}
+
+@keyframes blur-in {
+  0% {
+    text-shadow: -2px 0px 0px black;
+    /* transform: scale(0.75); */
+    transform: scaleX(0.2) translateX(-100px);
+  }
+  50% {
+    text-shadow: 2px 0px 0px black;
+    /* transform: scale(0.75); */
+  }
+  100% {
+    text-shadow: 0px 0px 0px black;
+    transform: scale(1);
   }
 }

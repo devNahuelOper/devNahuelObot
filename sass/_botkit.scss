@@ -20,13 +20,30 @@ html {
     font-family: 'helvetica', sans-serif;
 }
 
+html {
+  background-image: url("leftbot.jpg");
+  background-repeat: repeat-y;
+  background-position: -130px top;
+  background-size: contain;
+}
+
+body {
+  background-image: url("greenbot.jpg");
+  background-repeat: repeat-y;
+  background-position: 520px top;
+  background-size: contain;
+  border-top: 10px solid #8b8b8b;
+  border-bottom: 10px solid #989898;
+}
+
 .wrapper {
     @include clearfix;
     position: relative;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
-    box-shadow: 0 0 5px 2px #bbb7b7;
-    -webkit-box-shadow: 0 0 5px 2px #bbb7b7;
+    box-shadow: 0 0 12px 6px #3f4141;
+    -webkit-box-shadow: 0 0 12px 6px #3f4141;
+   border-radius: 8px;
 }
 
 .box {
