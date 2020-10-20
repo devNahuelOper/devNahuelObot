@@ -13,15 +13,14 @@ html {
 }
 
 html {
-  background-image: url('leftbot.jpg');
+  background-image: url("leftbot.jpg");
   background-repeat: repeat-y;
   background-position: -130px top;
   background-size: contain;
 }
 
-
 body {
-  background-image: url('greenbot.jpg');
+  background-image: url("greenbot.jpg");
   background-repeat: repeat-y;
   background-position: 520px top;
   background-size: contain;
@@ -37,6 +36,8 @@ body {
   /* -webkit-box-shadow: 0 0 5px 2px #bbb7b7; */
   box-shadow: 0 0 12px 6px #3f4141;
   -webkit-box-shadow: 0 0 12px 6px #3f4141;
+   /* border-radius: 8px 8px 0 0; */
+   border-radius: 8px;
 }
 
 .wrapper:after {
@@ -164,6 +165,8 @@ a.button:hover {
   display: flex;
   flex-direction: column;
   font-family: "helvetica", sans-serif;
+  /* border-radius: 8px 8px 0 0; */
+  border-radius: 8px;
 }
 
 #message_window .disconnected {
@@ -216,6 +219,7 @@ a.button:hover {
   overflow-y: auto;
   background: linear-gradient(90deg, #060121, #4e004e);
   /* background: linear-gradient(320deg, #060121, #4e004e, #4c3201); */
+  border-radius: 8px 8px 0 0;
 }
 
 #message_window section div div {
@@ -266,7 +270,7 @@ a.button:hover {
   display: inline-block;
   max-width: 75%;
   box-shadow: 1px 1px 0px 2px #afafaf;
-  
+
   /* animation: 1s blink infinite 0.6666s; */
 }
 
