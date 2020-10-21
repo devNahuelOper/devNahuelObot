@@ -36,7 +36,7 @@
       "position": "Developer",
       "url": "http://www.solvana.io/",
       "startDate": "2020-10-10",
-      "endDate": "2020-00-00",
+      "endDate": "2021-01-10",
       "summary": "SOLVANA is your turnkey PV solar energy and battery energy storage system provider. We custom design, engineer, permit, and build PV energy systems for homes and businesses throughout the USA.",
       "highlights": [
         "Constructed the backbone of Solvana with a rock-solid foundation using Typescript.",
@@ -83,12 +83,12 @@
     {
       "institution": "CUNY Hunter College",
       "url": "https://hunter.cuny.edu/",
-      "area": "Fullstack Software Engineering",
-      "studyType": "Bachelor",
+      "area": "Theater",
+      "studyType": "Bachelor of Arts",
       "startDate": "2007-09-01",
       "endDate": "2009-12-15",
       "gpa": "3.5",
-      "courses": ["Theater"]
+      "major": ["Theater"]
     }
   ],
   "awards": [
@@ -220,12 +220,11 @@
         "Backend Developer",
         "Designer"
       ],
-      "entity": "All",
       "type": "application"
     },
     {
       "name": "Stereo Fidelity",
-      "description": "Musical game scripted entirely in Vanilla JavaScript. Player is given a list of songs and 100 icon + sound-effect pairings. Selecting a song will append a spinning slot-machine-like frame to the DOM, shifting between any three random icons out of the 100 on the board. The job of the player is to hover over any matches between the board and the frame, to clear that icon from the board. Score is based on amount cleared before song end. Thing Whack-a-Mole meets Beatsaber.",
+      "description": "Musical game scripted entirely in Vanilla JavaScript. Think Whack-a-Mole meets Beatsaber.",
       "highlights": [
         "Assembled 100 different sound-effect + icon pairings to accompany the game's songs. Utilized DOM manipulation techniques, e.g. event handlers, node appending to/removal from the DOM tree as the backbone of gameplay.",
         "Engineered Web Audio API functions to trigger & control a spinning frame with three random icons from the effects board at varying rates based on the song’s audio data.",
@@ -250,7 +249,6 @@
         "Backend Developer",
         "Designer"
       ],
-      "entity": "All",
       "type": "application"
     }
   ],
