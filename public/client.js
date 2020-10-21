@@ -157,6 +157,8 @@ var Botkit = {
   },
   connectWebhook: function () {
     var that = this;
+
+    var connectEvent = "hello";
     if (Botkit.getCookie("botkit_guid")) {
       that.guid = Botkit.getCookie("botkit_guid");
       connectEvent = "welcome_back";
