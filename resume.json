@@ -45,32 +45,50 @@
       ]
     }
   ],
-  "volunteer": [
-    {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "url": "http://coderdojo.example.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
-      "highlights": [
-        "Awarded 'Teacher of the Month'"
-      ]
-    }
-  ],
   "education": [
     {
-      "institution": "University of Oklahoma",
-      "url": "https://www.ou.edu/",
-      "area": "Information Technology",
-      "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "gpa": "4.0",
+      "institution": "App Academy",
+      "url": "http://www.appacademy.io",
+      "area": "Fullstack Software Engineering",
+      "studyType": "Certification",
+      "startDate": "2020-03-15",
+      "endDate": "2020-07-02",
       "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
+        "JavaScript",
+        "React",
+        "Ruby",
+        "Ruby on Rails",
+        "Redux",
+        "jQuery",
+        "AJAX",
+        "HTML5",
+        "CSS",
+        "Sass",
+        "JSON",
+        "Git",
+        "GitHub",
+        "Node.js",
+        "Express.js",
+        "SQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Webpack",
+        "Heroku",
+        "Amazon Web Services (AWS)",
+        "Test Driven Development (TDD)",
+        "Object Oriented Programming (OOP)",
+        "REST API"
       ]
+    },
+    {
+      "institution": "CUNY Hunter College",
+      "url": "https://hunter.cuny.edu/",
+      "area": "Fullstack Software Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2007-09-01",
+      "endDate": "2009-12-15",
+      "gpa": "3.5",
+      "courses": ["Theater"]
     }
   ],
   "awards": [
@@ -94,35 +112,32 @@
     {
       "name": "Web Development",
       "level": "Master",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
-      ]
+      "keywords": ["HTML", "CSS", "Javascript"]
     },
     {
       "name": "Compression",
       "level": "Master",
-      "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
-      ]
+      "keywords": ["Mpeg", "MP4", "GIF"]
     }
   ],
   "languages": [
     {
       "language": "English",
       "fluency": "Native speaker"
-    }
+    }, 
+    {
+      "language": "Spanish",
+      "fluency": "Native Speaker"
+    },
+     {
+       "language": "Italian",
+       "fluency": "Conversational"
+     }
   ],
   "interests": [
     {
       "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
+      "keywords": ["Ferrets", "Unicorns"]
     }
   ],
   "references": [
@@ -133,26 +148,19 @@
   ],
   "projects": [
     {
-      "name": "Miss Direction",
-      "description": "A mapping engine that misguides you",
+      "name": "Denizen Confidant",
+      "description": "A full-stack clone of Resident Advisor, the platform to visit for all things Electronic Music",
       "highlights": [
-        "Won award at AIHacks 2016",
-        "Built by all women team of newbie programmers",
-        "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
+        "Concocted robust search functionality for main project entities, initializing query state to  an empty string for main index and triggering a  handler that calls upon custom filter methods on change events and resulting in  a dynamically updated unordered list of matches that renders on each user input.",
+        "Enforced user authentication pattern via React conditional front-end routing, using React-Router to configure a Protected Route redirecting the user to login or register page when trying to access unauthorized content (e.g., user profile page, create/update event form).",
+        "Designed pixel-perfect renditions of multiple pages, using media queries for scalability, applying box-model and container logic with matching widths and margin-based centering allowing for optimized media-queries dictating key component widths at varying breakpoints"
       ],
-      "keywords": [
-        "GoogleMaps",
-        "Chrome Extension",
-        "Javascript"
-      ],
-      "startDate": "2016-08-24",
-      "endDate": "2016-08-24",
-      "url": "missdirection.example.com",
-      "roles": [
-        "Team lead",
-        "Designer"
-      ],
-      "entity": "Smoogle",
+      "keywords": ["Javascript", "React", "Redux", "Ruby", "Ruby On Rails", "jQuery", "AJAX", "Sass", "Scss", "HTML5", "Heroku", "Amazon Web Services"],
+      "startDate": "2020-06-04",
+      "endDate": "2020-10-01",
+      "url": "https://denizen-confidant.herokuapp.com/",
+      "roles": ["Sole Engineer", "Frontend Developer", "Backend Developer", "Designer"],
+      "entity": "All",
       "type": "application"
     }
   ],
