@@ -21,6 +21,10 @@ module.exports = function (controller) {
     //   await bot.reply(message, "I received an event of type " + message.type);
     // });
 
+    controller.hears(new RegExp("name"), "message", async (bot, message) => {
+      await bot.reply(message, "Nahuel Gorosito");
+    });
+  
 
     controller.hears(new RegExp("quick"), "message", async (bot, message) => {
       await bot.reply(message, {
