@@ -7,7 +7,7 @@
     "email": "ngorositodev@gmail.com",
     "phone": "(917) 841-1019",
     "url": "https://devnahueloper.github.io/",
-    "summary": "Nahuel is an Argentinian-born, New York City-raised former actor turned software engineer.\n Nahuel's creative side still gets to roam freely as a developer, while also providing an outlet for his analytical side which loves puzzles and algorithms.\n He began dabbling in code via some online tutorials back in 2016, taking the full leap in 2020 by completing App Academy's 16 week, equal parts intense and rewarding bootcamp",
+    "summary": "Nahuel is an Argentinian-born, New York City-raised former actor turned software engineer.\n Nahuel's creative side still gets to roam freely as a developer, while also providing an outlet for his analytical side which loves puzzles and algorithms.\n He began dabbling in code via some online tutorials back in 2016, taking the full leap in 2020 by completing App Academy's 16 week, equal parts intense and rewarding bootcamp.",
     "location": {
       "address": "123 Blank Street",
       "postalCode": "NY 11206",
@@ -39,9 +39,9 @@
       "endDate": "2020-00-00",
       "summary": "SOLVANA is your turnkey PV solar energy and battery energy storage system provider. We custom design, engineer, permit, and build PV energy systems for homes and businesses throughout the USA.",
       "highlights": [
-        "Constructed the backbone of Solvana with a rock-solid foundation using Typescript",
-        "Engineered testing framework combining Typescript and Jest",
-        "Devised a sleek, responsive layout via React hooks and MaterialUI"
+        "Constructed the backbone of Solvana with a rock-solid foundation using Typescript.",
+        "Engineered testing framework combining Typescript and Jest.",
+        "Devised a sleek, responsive layout via React hooks and MaterialUI."
       ]
     }
   ],
@@ -103,32 +103,63 @@
     {
       "name": "Frontend Development",
       "level": "Master",
-      "keywords": ["Javascript", "React", "Redux", "JQuery", "HTML", "CSS", "Sass", "JSON", "Bootstrap", "MaterialUI", "Git", "Chrome Developer Tools", "Responsive Design", "Adobe Photoshop"]
+      "keywords": [
+        "Javascript",
+        "React",
+        "Redux",
+        "JQuery",
+        "HTML",
+        "CSS",
+        "Sass",
+        "JSON",
+        "Bootstrap",
+        "MaterialUI",
+        "Git",
+        "Chrome Developer Tools",
+        "Responsive Design",
+        "Adobe Photoshop"
+      ]
     },
     {
       "name": "Backend Development",
       "level": "Master",
-      "keywords": ["Ruby", "Ruby On Rails", "Python", "Typescript", "SQL", "SQLite", "Node.js", "Express.js", "Postgres", "MongoDB", "Mongoose", "Big-O", "Recursion", "Git", "Heroku"]
+      "keywords": [
+        "Ruby",
+        "Ruby On Rails",
+        "Python",
+        "Typescript",
+        "SQL",
+        "SQLite",
+        "Node.js",
+        "Express.js",
+        "Postgres",
+        "MongoDB",
+        "Mongoose",
+        "Big-O",
+        "Recursion",
+        "Git",
+        "Heroku"
+      ]
     }
   ],
   "languages": [
     {
       "language": "English",
       "fluency": "Native speaker"
-    }, 
+    },
     {
       "language": "Spanish",
       "fluency": "Native Speaker"
     },
-     {
-       "language": "Italian",
-       "fluency": "Conversational"
-     }
+    {
+      "language": "Italian",
+      "fluency": "Conversational"
+    }
   ],
   "interests": [
     {
       "name": "Acting",
-      "keywords": ["Cinema","Film", "Movies", "Theater"]
+      "keywords": ["Cinema", "Film", "Movies", "Theater"]
     },
     {
       "name": "Cycling",
@@ -150,27 +181,75 @@
     },
     {
       "name": "Douglas Crawford",
-      "reference": "Nahuel is an industrious and creative software engineer that I have collaborated with on several full-stack web application projects. As Front End Lead for one such project, VitalDB, Nahuel produced quality web pages exhibiting both pixel perfection and intuitive design. Furthermore, Nahuel contributed the project's title and custom-designed logo. My key takeaway from working with Nahuel is that he is receptive, reliable and amiable. His amicability makes him a prime choice for team ventures, and his outstanding diligence allows him to produce innovative and detail-oriented results. As a passionate software engineer, he is constantly learning new technologies and hungry for unique challenges. Nahuel is imaginative and pleasant to work with, and I highly recommend him for any project requiring a dependable teammate and gratifying results." 
+      "reference": "Nahuel is an industrious and creative software engineer that I have collaborated with on several full-stack web application projects. As Front End Lead for one such project, VitalDB, Nahuel produced quality web pages exhibiting both pixel perfection and intuitive design. Furthermore, Nahuel contributed the project's title and custom-designed logo. My key takeaway from working with Nahuel is that he is receptive, reliable and amiable. His amicability makes him a prime choice for team ventures, and his outstanding diligence allows him to produce innovative and detail-oriented results. As a passionate software engineer, he is constantly learning new technologies and hungry for unique challenges. Nahuel is imaginative and pleasant to work with, and I highly recommend him for any project requiring a dependable teammate and gratifying results."
     },
-     {
-       "name": "Isaac Owens",
-       "reference": "Nahuel is a fantastic software engineer and problem solver. I partnered with Nahuel on a multi day project while we were students together at App Academy and he was definitely one of my favorite partners! He was always so present with the work and was always willing to share and listen to ideas. So many of our bugs were solved with a combination of Nahuel's creative, out of the box thinking and his relentless tenacity. I like that he is always willing to do what it takes to get the job done and it was inspiring to collaborate with someone that goes the extra mile to solve a problem. Throughout our work together I cannot remember a single time Nahuel lost his temper or let his frustration get the best of him! If I were on a team I know that I would feel more comfortable and confident knowing that Nahuel was part of that team as well!"
-     }
+    {
+      "name": "Isaac Owens",
+      "reference": "Nahuel is a fantastic software engineer and problem solver. I partnered with Nahuel on a multi day project while we were students together at App Academy and he was definitely one of my favorite partners! He was always so present with the work and was always willing to share and listen to ideas. So many of our bugs were solved with a combination of Nahuel's creative, out of the box thinking and his relentless tenacity. I like that he is always willing to do what it takes to get the job done and it was inspiring to collaborate with someone that goes the extra mile to solve a problem. Throughout our work together I cannot remember a single time Nahuel lost his temper or let his frustration get the best of him! If I were on a team I know that I would feel more comfortable and confident knowing that Nahuel was part of that team as well!"
+    }
   ],
   "projects": [
     {
       "name": "Denizen Confidant",
-      "description": "A full-stack clone of Resident Advisor, the platform to visit for all things Electronic Music",
+      "description": "A full-stack clone of Resident Advisor, the platform to visit for all things Electronic Music.",
       "highlights": [
         "Concocted robust search functionality for main project entities, initializing query state to  an empty string for main index and triggering a  handler that calls upon custom filter methods on change events and resulting in  a dynamically updated unordered list of matches that renders on each user input.",
         "Enforced user authentication pattern via React conditional front-end routing, using React-Router to configure a Protected Route redirecting the user to login or register page when trying to access unauthorized content (e.g., user profile page, create/update event form).",
-        "Designed pixel-perfect renditions of multiple pages, using media queries for scalability, applying box-model and container logic with matching widths and margin-based centering allowing for optimized media-queries dictating key component widths at varying breakpoints"
+        "Designed pixel-perfect renditions of multiple pages, using media queries for scalability, applying box-model and container logic with matching widths and margin-based centering allowing for optimized media-queries dictating key component widths at varying breakpoints."
       ],
-      "keywords": ["Javascript", "React", "Redux", "Ruby", "Ruby On Rails", "jQuery", "AJAX", "Sass", "Scss", "HTML5", "Heroku", "Amazon Web Services"],
+      "keywords": [
+        "Javascript",
+        "React",
+        "Redux",
+        "Ruby",
+        "Ruby On Rails",
+        "jQuery",
+        "AJAX",
+        "CSS",
+        "Sass",
+        "HTML5",
+        "Heroku",
+        "Amazon Web Services"
+      ],
       "startDate": "2020-06-04",
       "endDate": "2020-10-01",
       "url": "https://denizen-confidant.herokuapp.com/",
-      "roles": ["Sole Engineer", "Frontend Developer", "Backend Developer", "Designer"],
+      "roles": [
+        "Sole Engineer",
+        "Frontend Developer",
+        "Backend Developer",
+        "Designer"
+      ],
+      "entity": "All",
+      "type": "application"
+    },
+    {
+      "name": "Stereo Fidelity",
+      "description": "Musical game scripted entirely in Vanilla JavaScript. Player is given a list of songs and 100 icon + sound-effect pairings. Selecting a song will append a spinning slot-machine-like frame to the DOM, shifting between any three random icons out of the 100 on the board. The job of the player is to hover over any matches between the board and the frame, to clear that icon from the board. Score is based on amount cleared before song end. Thing Whack-a-Mole meets Beatsaber.",
+      "highlights": [
+        "Assembled 100 different sound-effect + icon pairings to accompany the game's songs. Utilized DOM manipulation techniques, e.g. event handlers, node appending to/removal from the DOM tree as the backbone of gameplay.",
+        "Engineered Web Audio API functions to trigger & control a spinning frame with three random icons from the effects board at varying rates based on the song’s audio data.",
+        "Provided user feedback by invoking style changes on matching effects board icons, serving as an alert to the user on where to hover to clear that icon from the board. Scripted conditional testing to ensure the target icon matches any of the three frame icons."
+      ],
+      "keywords": [
+        "Javascript",
+        "DOM Manipulation",
+        "Web Audio API",
+        "CSS3",
+        "Scss",
+        "HTML5",
+        "Node.js",
+        "Webpack"
+      ],
+      "startDate": "2020-06-24",
+      "endDate": "2020-09-01",
+      "url": "https://devnahueloper.github.io/StereoFidelity/",
+      "roles": [
+        "Sole Engineer",
+        "Frontend Developer",
+        "Backend Developer",
+        "Designer"
+      ],
       "entity": "All",
       "type": "application"
     }
