@@ -563,10 +563,23 @@ var Botkit = {
 
         for (let r = 0; r < message.basics.length; r++) {
           (function (reply) {
+            console.log(reply[0]);
             var li = document.createElement("li");
             var el = document.createElement("a");
             el.innerHTML = reply[0];
             el.href = "#";
+            if (reply[0] == "url") {
+              el.href = reply[1];
+              el.target = "_blank";
+            } else if(reply[0] == "image") {
+              let img = document.createElement("img");
+              img.innerHTML = reply[0];
+              img.href = "#";
+              img.src = reply[1];
+              li.appendChild(img);
+            } else {
+              el.href = "#";
+            }
 
             el.onclick = function () {
               that.quickReply(reply[1]);
