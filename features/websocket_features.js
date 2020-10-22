@@ -27,41 +27,52 @@ module.exports = function (controller) {
     controller.hears("resume", "message", async (bot, message) => {
       await bot.reply(message, {
         text: "Here is my resume...",
-        resume: entries
+        resume: entries,
       });
     });
 
-     controller.hears("basics", "message", async (bot, message) => {
-       await bot.reply(message, {
-         text: "Here are some basics about me...",
-         basics: Object.entries(resume.basics),
-       });
-     });
-
-  
-      controller.hears(new RegExp("quick"), "message", async (bot, message) => {
-        await bot.reply(message, {
-          text: "Here are some quick replies",
-          // quick_replies: entries.map(entry => entry[0])
-          quick_replies: [
-            {
-              title: "Name",
-              payload: "Nahuel Gorosito",
-            },
-            {
-              title: "Title",
-              payload: "Fullstack Developer",
-            },
-            {
-              title: "Where did you grow up?",
-              payload: "Queens, New York",
-            },
-            {
-              title: "Email",
-              payload: "ngorositodev@gmail.com",
-            },
-          ],
-        });
+    controller.hears("basics", "message", async (bot, message) => {
+      await bot.reply(message, {
+        text: "Here are some basics about me...",
+        basics: Object.entries(resume.basics),
       });
+    });
+    // controller.hears("profiles", "message", async (bot, message) => {
+    //   await bot.reply(message, {
+    //     text: "Some of my online profiles",
+    //     //  profiles: Object.entries(resume.basics.profiles)
+    //     profiles: [
+    //       {
+    //         title: "LinkedIn",
+    //         payload: "https://www.linkedin.com/in/nahuel-gorosito-a2a41524/",
+    //       },
+    //     ],
+    //   });
+    // });
+
+    controller.hears(new RegExp("quick"), "message", async (bot, message) => {
+      await bot.reply(message, {
+        text: "Here are some quick replies",
+        // quick_replies: entries.map(entry => entry[0])
+        quick_replies: [
+          {
+            title: "Name",
+            payload: "Nahuel Gorosito",
+          },
+          {
+            title: "Title",
+            payload: "Fullstack Developer",
+          },
+          {
+            title: "Where did you grow up?",
+            payload: "Queens, New York",
+          },
+          {
+            title: "Email",
+            payload: "ngorositodev@gmail.com",
+          },
+        ],
+      });
+    });
   }
 };

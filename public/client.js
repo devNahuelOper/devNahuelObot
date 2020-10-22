@@ -240,7 +240,7 @@ var Botkit = {
       setTimeout(() => {
         hint = {
           text:
-            "Type in 'quick' for some quick answers about me or 'resume' to see some resume entries",
+            "Try typing 'quick', 'basics' or 'resume'...",
           // isTyping: false,
         };
         that.renderMessage(hint);
@@ -532,8 +532,16 @@ var Botkit = {
             el.href = "#";
 
             el.onclick = function () {
-              // that.quickReply(JSON.stringify(reply[1]));
-              that.quickReply(reply[1]);
+              if (message.basics) {
+                that.quickReply(Object.entries(message.basics));
+              } else {
+                that.quickReply(JSON.stringify(reply[1]));
+              }
+              //  if (!message.basics) {
+              //    that.quickReply(JSON.stringify(reply[1]));
+              //  } else {
+              //    that.quickReply(Object.entries(reply[1]));
+              //  }
               el.remove();
             };
 
@@ -549,7 +557,6 @@ var Botkit = {
 
     that.on("message", function (message) {
       if (message.basics) {
-        // let entries = Object.entries(resume).slice(1, -1);
         let list = document.createElement("ul");
 
         let elements = [];
@@ -562,7 +569,6 @@ var Botkit = {
             el.href = "#";
 
             el.onclick = function () {
-              // that.quickReply(JSON.stringify(reply[1]));
               that.quickReply(reply[1]);
               el.remove();
             };
@@ -577,8 +583,33 @@ var Botkit = {
       }
     });
 
+      // that.on("message", function (message) {
+      //   if (message.profiles) {
+      //     let list = document.createElement("ul");
 
+      //     let elements = [];
 
+      //     for (let r = 0; r < message.profiles.length; r++) {
+      //       (function (reply) {
+      //         var li = document.createElement("li");
+      //         var el = document.createElement("a");
+      //         el.innerHTML = reply.title;
+      //         el.href = "#";
+
+      //         el.onclick = function () {
+      //           that.quickReply(reply.payload);
+      //           el.remove();
+      //         };
+
+      //         li.appendChild(el);
+      //         list.appendChild(li);
+      //         elements.push(li);
+      //       })(message.profiles[r]);
+      //     }
+
+      //     that.replies.appendChild(list);
+      //   }
+      // });
 
     that.on("history_loaded", function (history) {
       if (history) {
