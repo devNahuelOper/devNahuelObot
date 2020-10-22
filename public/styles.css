@@ -269,7 +269,7 @@ a.button:hover {
   display: inline-block;
   max-width: 75%;
   box-shadow: 1px 1px 0px 2px #afafaf;
-
+  overflow: scroll;
   /* animation: 1s blink infinite 0.6666s; */
 }
 
@@ -331,6 +331,7 @@ a.button:hover {
   background: #05a7af;
   color: white;
   box-shadow: 0px 0px 0px 2px #9efaff;
+  overflow: scroll;
 }
 
 #message_window #message_replies {

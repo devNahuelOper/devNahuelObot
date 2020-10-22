@@ -13,9 +13,8 @@ module.exports = function (controller) {
   if (controller.adapter.name === "Web Adapter") {
     console.log("Loading sample web features...");
 
-    controller.ready(() => {
-      // console.log(resume);
-    });
+    // controller.ready(() => {
+    // });
 
     // controller.hears(".*", "message", async (bot, message) => {
     //   await bot.reply(message, "I heard: " + message.text);

@@ -9,8 +9,6 @@
 var converter = new showdown.Converter();
 converter.setOption("openLinksInNewWindow", true);
 
-
-
 var Botkit = {
   config: {
     ws_url:
@@ -197,9 +195,6 @@ var Botkit = {
     if (Botkit.getCookie("botkit_guid")) {
       that.guid = Botkit.getCookie("botkit_guid");
       connectEvent = "welcome_back";
-      // connectEvent = {
-      //   text: "Welcome to devNahuelObot!",
-      // };
     } else {
       that.guid = that.generate_guid();
       Botkit.setCookie("botkit_guid", that.guid, 1);
@@ -238,21 +233,20 @@ var Botkit = {
         that.renderMessage(welcomeMessage);
         let message = document.getElementsByClassName("message")[1];
         message.classList.add("blur-in");
-
-        
       }, 800);
       that.renderMessage(welcomeMessage);
       that.renderMessage(hint);
 
       setTimeout(() => {
         hint = {
-          text: "Type in 'quick' for some quick answers about me or 'resume' to see some resume entries",
+          text:
+            "Type in 'quick' for some quick answers about me or 'resume' to see some resume entries",
           // isTyping: false,
         };
         that.renderMessage(hint);
         hint.isTyping = false;
       }, 3000);
-      
+
       // let message = document.getElementsByClassName("message")[1];
       // message.classList.add("blur-in");
     });
@@ -523,10 +517,10 @@ var Botkit = {
       }
     });
 
-    that.on("message", function(message) {
+    that.on("message", function (message) {
       if (message.resume) {
         // let entries = Object.entries(resume).slice(1, -1);
-        let list = document.createElement('ul');
+        let list = document.createElement("ul");
 
         let elements = [];
 
@@ -539,6 +533,35 @@ var Botkit = {
 
             el.onclick = function () {
               that.quickReply(JSON.stringify(reply[1]));
+              // if (!Array.isArray(reply[1])) {
+              //     let list = document.createElement("ul");
+              //     let elements = [];
+              //   let entries = Object.entries(reply[1]);
+              //   for (let rr = 0; rr < entries.length; rr++) {
+              //     (function (nextReply) {
+              //       var nextLi = document.createElement("li");
+              //       var nextEl = document.createElement("a");
+              //       nextEl.innerHTML = nextReply[0];
+              //       nextEl.href = "#";
+
+              //       nextEl.onclick = function () {
+              //         let payload =
+              //           typeof nextReply[1] == "string"
+              //             ? nextReply[1]
+              //             : JSON.stringify(nextReply[1]);
+              //         that.quickReply(payload);
+              //         console.log(payload);
+              //         nextEl.remove();
+              //       };
+
+              //       li.appendChild(nextEl);
+              //       list.appendChild(nextLi);
+              //       elements.push(nextLi);
+              //     })(message.resume.reply[rr]);
+              //   }
+              //   that.replies.appendChild(list);
+              // }
+              
               el.remove();
             };
 
