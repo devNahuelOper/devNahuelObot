@@ -26,10 +26,17 @@ module.exports = function (controller) {
 
     controller.hears("resume", "message", async (bot, message) => {
       await bot.reply(message, {
-        text: "Here is my resume",
+        text: "Here is my resume...",
         resume: entries
       });
     });
+
+     controller.hears("basics", "message", async (bot, message) => {
+       await bot.reply(message, {
+         text: "Here are some basics about me...",
+         basics: Object.entries(resume.basics),
+       });
+     });
 
   
       controller.hears(new RegExp("quick"), "message", async (bot, message) => {
@@ -48,6 +55,10 @@ module.exports = function (controller) {
             {
               title: "Where did you grow up?",
               payload: "Queens, New York",
+            },
+            {
+              title: "Email",
+              payload: "ngorositodev@gmail.com",
             },
           ],
         });

@@ -532,36 +532,8 @@ var Botkit = {
             el.href = "#";
 
             el.onclick = function () {
-              that.quickReply(JSON.stringify(reply[1]));
-              // if (!Array.isArray(reply[1])) {
-              //     let list = document.createElement("ul");
-              //     let elements = [];
-              //   let entries = Object.entries(reply[1]);
-              //   for (let rr = 0; rr < entries.length; rr++) {
-              //     (function (nextReply) {
-              //       var nextLi = document.createElement("li");
-              //       var nextEl = document.createElement("a");
-              //       nextEl.innerHTML = nextReply[0];
-              //       nextEl.href = "#";
-
-              //       nextEl.onclick = function () {
-              //         let payload =
-              //           typeof nextReply[1] == "string"
-              //             ? nextReply[1]
-              //             : JSON.stringify(nextReply[1]);
-              //         that.quickReply(payload);
-              //         console.log(payload);
-              //         nextEl.remove();
-              //       };
-
-              //       li.appendChild(nextEl);
-              //       list.appendChild(nextLi);
-              //       elements.push(nextLi);
-              //     })(message.resume.reply[rr]);
-              //   }
-              //   that.replies.appendChild(list);
-              // }
-              
+              // that.quickReply(JSON.stringify(reply[1]));
+              that.quickReply(reply[1]);
               el.remove();
             };
 
@@ -574,6 +546,39 @@ var Botkit = {
         that.replies.appendChild(list);
       }
     });
+
+    that.on("message", function (message) {
+      if (message.basics) {
+        // let entries = Object.entries(resume).slice(1, -1);
+        let list = document.createElement("ul");
+
+        let elements = [];
+
+        for (let r = 0; r < message.basics.length; r++) {
+          (function (reply) {
+            var li = document.createElement("li");
+            var el = document.createElement("a");
+            el.innerHTML = reply[0];
+            el.href = "#";
+
+            el.onclick = function () {
+              // that.quickReply(JSON.stringify(reply[1]));
+              that.quickReply(reply[1]);
+              el.remove();
+            };
+
+            li.appendChild(el);
+            list.appendChild(li);
+            elements.push(li);
+          })(message.basics[r]);
+        }
+
+        that.replies.appendChild(list);
+      }
+    });
+
+
+
 
     that.on("history_loaded", function (history) {
       if (history) {
