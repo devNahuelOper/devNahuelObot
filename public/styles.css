@@ -365,6 +365,7 @@ a.button:hover {
   padding: 0.25rem 1rem;
   font-size: 14px;
   cursor: pointer;
+  text-transform: capitalize;
 }
 
 #message_window #message_replies a:hover {

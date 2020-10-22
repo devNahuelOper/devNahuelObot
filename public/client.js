@@ -2,8 +2,14 @@
  * Copyright (c) Microsoft Corporation. All rights reserved.
  * Licensed under the MIT License.
  */
+// const { resume } = require("resume.json");
+
+// import resume from "../resume.json";
+
 var converter = new showdown.Converter();
 converter.setOption("openLinksInNewWindow", true);
+
+
 
 var Botkit = {
   config: {
@@ -240,7 +246,7 @@ var Botkit = {
 
       setTimeout(() => {
         hint = {
-          text: "Type in 'quick' for some quick answers about me...",
+          text: "Type in 'quick' for some quick answers about me or 'resume' to see some resume entries",
           // isTyping: false,
         };
         that.renderMessage(hint);
@@ -514,6 +520,35 @@ var Botkit = {
         }
       } else {
         that.input.disabled = false;
+      }
+    });
+
+    that.on("message", function(message) {
+      if (message.resume) {
+        // let entries = Object.entries(resume).slice(1, -1);
+        let list = document.createElement('ul');
+
+        let elements = [];
+
+        for (let r = 0; r < message.resume.length; r++) {
+          (function (reply) {
+            var li = document.createElement("li");
+            var el = document.createElement("a");
+            el.innerHTML = reply[0];
+            el.href = "#";
+
+            el.onclick = function () {
+              that.quickReply(JSON.stringify(reply[1]));
+              el.remove();
+            };
+
+            li.appendChild(el);
+            list.appendChild(li);
+            elements.push(li);
+          })(message.resume[r]);
+        }
+
+        that.replies.appendChild(list);
       }
     });
 
