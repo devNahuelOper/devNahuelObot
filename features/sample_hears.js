@@ -39,4 +39,21 @@ module.exports = function (controller) {
    controller.hears((["name", "nombre"]), "message", async (bot, message) => {
      await bot.reply(message, "Nahuel Gorosito");
    });
+
+  //  controller.hears("skills", "message", async (bot, message) => {
+  //    await bot.reply(message, {
+  //       skills: [
+  //         {
+  //           title: "languages",
+  //           payload: "JavaScript"
+  //         },
+  //         {
+  //           title: "principles",
+  //           payload: "Object Oriented Programming"
+  //         }
+  //       ]
+  //    })
+  //  });
+
+  
 };

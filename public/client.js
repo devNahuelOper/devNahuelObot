@@ -227,7 +227,7 @@ var Botkit = {
 
       setTimeout(() => {
         welcomeMessage = {
-          text: "Welcome to devNahuelObot!",
+          text: "Welcome to devNahuelObot! (under construction)",
           isTyping: false,
         };
         that.renderMessage(welcomeMessage);
